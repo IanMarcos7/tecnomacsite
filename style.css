@@ -1,0 +1,305 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 10%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.whatsapp-fixo:hover {
+  background-color: #1ebc57;
+}
+
+.botao-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;       
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10%;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.botao-topo img{
+  height: 30px;
+}
+
+.botao-topo:hover {
+  opacity: 1;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.container img{
+  height: 80px;
+}
+
+/* Cabeçalho */
+.topo {
+  background-color: #df2924;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.topo h1 {
+  font-size: 2.5em;
+}
+
+.topo p {
+  font-size: 1.2em;
+  color: #ffe03f;
+}
+
+/* Menu */
+.menu {
+  background-color: #222;
+}
+
+.menu .container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #ffe03f;
+}
+
+/* Seção Hero */
+.hero {
+  background: url('./img/fototec.png') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.59);
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+#map{
+  text-align: left;
+}
+
+.hero h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.botao-cta {
+  background-color: #25d366;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.botao-cta:hover {
+  background-color: #1ebc59;
+}
+
+/* Seções */
+section {
+  padding: 60px 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Serviços */
+
+.servicos .container{
+   justify-content: center;
+  align-items: center;
+}
+
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.botao-ver-mais {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.botao-ver-mais:hover {
+  background-color: #444;
+}
+/* Localização */
+.localizacao iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.contato-linha {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; /* <-- Adicione esta linha */
+  margin-top: 10px;
+}
+
+.contato-linha p {
+  margin: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.contato-linha i {
+  margin-right: 8px;
+  color: #333;
+}
+
+
+/* Contato */
+.botao-whats {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.botao-whats:hover {
+  background-color: #1ebc59;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.6em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
