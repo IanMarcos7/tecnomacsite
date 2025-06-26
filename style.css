@@ -118,6 +118,18 @@ body {
   color: #ffe03f;
 }
 
+.frase-destaque {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #df2924;
+  background-color: #ffd0d0;
+  border-left: 5px solid #df2924;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+
 /* Seção Hero */
 .hero {
   background: url('./img/fototec.png') center/cover no-repeat;
