@@ -132,7 +132,7 @@ body {
 
 /* Seção Hero */
 .hero {
-  background: url('./img/fototec.png') center/cover no-repeat;
+  background: url('./img/fototec.png') 0% 75% / cover no-repeat;
   color: white;
   text-align: center;
   padding: 120px 20px;
