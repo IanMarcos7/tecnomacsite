@@ -9,6 +9,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* WhatsApp Fixo */
 .whatsapp-fixo {
   position: fixed;
   bottom: 80px;
@@ -31,11 +39,12 @@ html {
   background-color: #1ebc57;
 }
 
+/* Botão de topo */
 .botao-topo {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 45px;       
+  width: 45px;
   height: 45px;
   display: flex;
   justify-content: center;
@@ -51,7 +60,7 @@ html {
   z-index: 1000;
 }
 
-.botao-topo img{
+.botao-topo img {
   height: 30px;
 }
 
@@ -59,13 +68,85 @@ html {
   opacity: 1;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
-  background-color: #f5f5f5;
-  color: #333;
+/* Cabeçalho fixo com transição e alinhamento */
+.header-fixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #222;
+  z-index: 1000;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
 }
 
+.header-fixo.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.header-fixo .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-fixo .logo-fixa {
+  height: 40px;
+  cursor: pointer; /* para indicar clicável */
+}
+
+/* Menu fixo desktop */
+.menu-fixo {
+  height: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-fixo a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.menu-fixo a:hover {
+  color: #ffe03f;
+}
+
+/* Botão hamburguer - escondido no desktop */
+.btn-hamburguer {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 28px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1100;
+}
+
+.btn-hamburguer span {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
+/* Container */
 .container {
   text-align: center;
   max-width: 1100px;
@@ -73,12 +154,11 @@ body {
   padding: 20px;
 }
 
-
-.container img{
+.container img {
   height: 80px;
 }
 
-/* Cabeçalho */
+/* Cabeçalho principal */
 .topo {
   background-color: #df2924;
   color: #fff;
@@ -118,6 +198,7 @@ body {
   color: #ffe03f;
 }
 
+/* Frase de destaque */
 .frase-destaque {
   font-size: 1.2rem;
   font-weight: 600;
@@ -128,7 +209,6 @@ body {
   margin-bottom: 30px;
   border-radius: 8px;
 }
-
 
 /* Seção Hero */
 .hero {
@@ -151,10 +231,6 @@ body {
 .hero .container {
   position: relative;
   z-index: 1;
-}
-
-#map{
-  text-align: left;
 }
 
 .hero h2 {
@@ -193,9 +269,8 @@ h2 {
 }
 
 /* Serviços */
-
-.servicos .container{
-   justify-content: center;
+.servicos .container {
+  justify-content: center;
   align-items: center;
 }
 
@@ -241,6 +316,7 @@ h2 {
 .botao-ver-mais:hover {
   background-color: #444;
 }
+
 /* Localização */
 .localizacao iframe {
   width: 100%;
@@ -250,12 +326,13 @@ h2 {
   margin-top: 15px;
 }
 
+/* Contato */
 .contato-linha {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; /* <-- Adicione esta linha */
+  justify-content: center;
   margin-top: 10px;
 }
 
@@ -272,8 +349,6 @@ h2 {
   color: #333;
 }
 
-
-/* Contato */
 .botao-whats {
   display: inline-block;
   margin-top: 20px;
@@ -301,6 +376,18 @@ h2 {
 
 /* Responsividade */
 @media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .topo .img{
+    width: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Menu principal fica coluna */
   .menu .container {
     flex-direction: column;
     align-items: center;
@@ -313,5 +400,59 @@ h2 {
 
   .hero p {
     font-size: 1em;
+  }
+
+  /* Menu fixo responsivo - mobile */
+  .menu-fixo {
+    position: fixed;
+    top: 60px; /* ajuste conforme altura do header */
+    right: 0;
+    width: 220px;
+    background: #222;
+    flex-direction: column;
+    gap: 0;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+
+  .menu-fixo a {
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .header-fixo .logo-fixa {
+  margin-top: 5px;
+  height: 30px;
+}
+
+  /* Menu fixo aberto */
+  .menu-fixo.menu-aberto {
+    transform: translateX(0);
+  }
+
+  /* Botão hamburguer aparece no mobile */
+  .btn-hamburguer {
+    display: flex;
+  }
+
+  /* animação do botão hamburguer quando ativo */
+  .btn-hamburguer.menu-aberto span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .btn-hamburguer.menu-aberto span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .btn-hamburguer.menu-aberto span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
+  /* Ajuste layout do container no header fixo no mobile */
+  .header-fixo .container {
+    justify-content: space-between;
   }
 }
