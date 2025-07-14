@@ -194,6 +194,10 @@ body {
   transition: color 0.3s;
 }
 
+.sobre .container p{
+  text-align: justify;
+}
+
 .menu a:hover {
   color: #ffe03f;
 }
@@ -386,7 +390,7 @@ h2 {
   }
 
   .topo .container img {
-    height: 7%; /* ou qualquer valor menor que 80px */
+    height: 75px;
   }
 }
 
