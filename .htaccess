@@ -1,3 +1,13 @@
+# Força HTTPS e endereço sem www (301)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+</IfModule>
+
 # Bloqueia arquivos internos (documentação)
 <FilesMatch "\.(md|lock|json)$">
   Require all denied
