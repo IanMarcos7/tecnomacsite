@@ -1,326 +1,723 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tecnomac</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./img/icone_tec.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <a href="https://wa.me/554832640808" 
-   class="whatsapp-fixo" 
-   target="_blank" 
-   title="Fale conosco pelo WhatsApp">
-  <i class="fab fa-whatsapp"></i>
-</a>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tecnomac | Oficina de Caminhões e Peças Diesel em Canelinha e Tijucas – SC</title>
+  <meta name="description" content="Oficina especializada em caminhões, ônibus e utilitários a diesel em Canelinha/SC. Mecânica, injeção eletrônica, bombas injetoras, borracharia, guincho e peças. Peça seu orçamento pelo WhatsApp.">
+  <link rel="canonical" href="https://mecanicatecnomac.com.br/">
+  <meta name="theme-color" content="#121417">
+  <script>document.documentElement.classList.add('js')</script>
+
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Tecnomac">
+  <meta property="og:title" content="Tecnomac | Oficina de caminhões e peças diesel – Canelinha/SC">
+  <meta property="og:description" content="Mecânica, injeção eletrônica, bombas injetoras, borracharia, guincho e peças para veículos a diesel. Mais de 40 anos de experiência.">
+  <meta property="og:url" content="https://mecanicatecnomac.com.br/">
+  <meta property="og:image" content="https://mecanicatecnomac.com.br/assets/img/og-tecnomac.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fachada da Tecnomac às margens da SC-410, em Canelinha">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Ícones -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Fontes: Barlow Condensed (títulos) + Barlow (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap">
+
+  <link rel="preload" as="image" href="assets/img/fachada-1280.webp" imagesrcset="assets/img/fachada-640.webp 640w, assets/img/fachada-1280.webp 1280w, assets/img/fachada-1920.webp 1920w" imagesizes="100vw" type="image/webp">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Dados estruturados -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "@id": "https://mecanicatecnomac.com.br/#empresa",
+    "name": "Tecnomac",
+    "legalName": "Tecnomac Comércio de Peças e Assistência Técnica LTDA",
+    "description": "Oficina especializada em caminhões, ônibus e utilitários a diesel: mecânica, injeção eletrônica, bombas injetoras, borracharia, guincho e venda de peças.",
+    "url": "https://mecanicatecnomac.com.br/",
+    "logo": "https://mecanicatecnomac.com.br/assets/img/logo-tecnomac.png",
+    "image": "https://mecanicatecnomac.com.br/assets/img/og-tecnomac.jpg",
+    "telephone": "+55-48-3264-0808",
+    "email": "tecnomac01@hotmail.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rodovia SC-410, km 16, nº 3558, Centro",
+      "addressLocality": "Canelinha",
+      "addressRegion": "SC",
+      "postalCode": "88230-000",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -27.2659, "longitude": -48.7810 },
+    "hasMap": "https://www.google.com/maps?cid=5761983808227116380",
+    "areaServed": ["Canelinha", "Tijucas", "São João Batista", "Nova Trento", "Grande Florianópolis"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "11:50" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "13:00", "closes": "17:50" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:00", "closes": "11:50" }
+    ],
+    "sameAs": ["https://www.instagram.com/tecnomac.sc/"],
+    "department": {
+      "@type": "AutoPartsStore",
+      "name": "Tecnomac – Loja de Peças Tijucas",
+      "telephone": "+55-48-3264-0808",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenida Coleira, nº 794, Praça",
+        "addressLocality": "Tijucas",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      }
+    }
+  }
+  </script>
 </head>
 <body>
-  <div id="header-fixo" class="header-fixo">
-  <div class="container">
-    <a href="#topo">
-    <img src="./img/Logo Tecnomac.png" alt="Logo Tecnomac" class="logo-fixa">
-    </a>
-    <nav class="menu-fixo">
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#pecas">Peças</a>
-      <a href="#localizacao">Localização</a>
-      <a href="#contato">Contato</a>
-    </nav>
-    <button class="btn-hamburguer" aria-label="Abrir menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
-</div>
-  <header id="topo" class="topo">
-    <div class="container">
-      <img src="./img/Logo Tecnomac.png" href="https://mecanicatecnomac.com.br/#topo" alt="">
-      <p><strong>O Melhor para o seu Caminhão</strong></p>
+  <!-- Ícones SVG (sprite) – substitui o Font Awesome, mais leve -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.59-.48-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.69.25-1.29.18-1.41-.08-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.41Z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="m5 12 5 5L20 7"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></g></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3.5"/></g></symbol>
+    <!-- Serviços -->
+    <symbol id="i-engine" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9h8m-4 0V6m-3 0h6"/><path d="M6 13h3l2-4h9l2 4h2v3h2v-3h2v10h-2v-3h-2v4h-4l-2 2h-8l-2-2H6v-3H3v-6h3v-2Z"/></g></symbol>
+    <symbol id="i-chip" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="16" height="16" rx="2"/><path d="M12 4v4m4-4v4m4-4v4m-8 16v4m4-4v4m4-4v4M4 12h4m-4 4h4m-4 4h4m16-8h4m-4 4h4m-4 4h4"/><path d="m13 17 2-3 2 4 2-3"/></g></symbol>
+    <symbol id="i-pump" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="16" width="22" height="10" rx="1.5"/><path d="M9 16v-5m5 5v-5m5 5v-5m5 5v-5"/><path d="M9 11c0-4 3-6 6-6h9m-15 6"/><path d="M14 11c0-3 2-4 4-4h6"/><circle cx="10" cy="21" r="1.5"/><circle cx="22" cy="21" r="1.5"/></g></symbol>
+    <symbol id="i-tire" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="5"/><path d="M16 4v4m0 16v4M4 16h4m16 0h4M7.5 7.5l2.8 2.8m11.4 11.4 2.8 2.8m0-17-2.8 2.8M10.3 21.7l-2.8 2.8"/></g></symbol>
+    <symbol id="i-tow" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22V12h10l3 5h3v5"/><path d="M5 12V8h5l2 4"/><path d="M18 17h4l6-9m0 0v6m0-6-2 1"/><path d="M18 22h9"/><circle cx="7" cy="23" r="2.5"/><circle cx="21" cy="23" r="2.5"/></g></symbol>
+    <symbol id="i-gear" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="4"/><path d="M16 3v4m0 18v4M3 16h4m18 0h4M6.8 6.8l2.8 2.8m12.8 12.8 2.8 2.8m0-18.4-2.8 2.8M9.6 22.4l-2.8 2.8"/><circle cx="16" cy="16" r="9"/></g></symbol>
+    <!-- Diferenciais -->
+    <symbol id="i-bolt" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M18 3 6 18h9l-2 11 13-16h-9l1-10Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3 5 7v8c0 7 5 12 11 14 6-2 11-7 11-14V7L16 3Z"/><path d="m11 16 4 4 7-8"/></g></symbol>
+    <symbol id="i-team" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="11" r="4"/><path d="M4 26c0-4.5 3.6-8 8-8s8 3.5 8 8"/><circle cx="23" cy="12" r="3"/><path d="M22 18c3.5 0 6 2.7 6 6"/></g></symbol>
+    <symbol id="i-building" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 28h26M6 28V9l10-5 10 5v19"/><path d="M11 28v-7h10v7M11 12h2m6 0h2m-10 4h2m6 0h2"/></g></symbol>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Tecnomac – voltar ao início">
+        <picture>
+          <source srcset="assets/img/logo-tecnomac.webp" type="image/webp">
+          <img src="assets/img/logo-tecnomac.png" alt="Tecnomac" width="600" height="132">
+        </picture>
+      </a>
+
+      <nav class="main-nav" id="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#pecas">Peças</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn--primary nav-cta-mobile" href="https://wa.me/554832640808?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tecnomac%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Falar no WhatsApp
+        </a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm header-cta" aria-label="Falar no WhatsApp" href="https://wa.me/554832640808?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tecnomac%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        <span>WhatsApp</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    
   </header>
 
-  <nav class="menu">
-    <div class="container">
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#pecas">Peças</a>
-      <a href="#localizacao">Localização</a>
-      <a href="#contato">Contato</a>
-    </div>
-  </nav>
+  <main id="conteudo">
 
-  <section class="hero">
-    <div class="container">
-      <h2>Especialistas em manutenção de veículos a diesel</h2>
-      <p>Atendimento rápido, transparente e com garantia.</p>
-      <a class="botao-cta" href="https://wa.me/554832640808" target="_blank">Agende pelo WhatsApp</a>
-    </div>
-  </section>
-
-  <section id="sobre" class="sobre">
-    <div class="container">
-      <h2>Quem somos?</h2>
-<p>
-  Com <strong>mais de 40 anos de experiência</strong>, a <strong>Tecnomac</strong> é referência em manutenção e reparos de veículos a diesel em Canelinha/SC e região. 
-  Fundada com o compromisso de oferecer um serviço técnico de excelência, a Tecnomac se destaca pelo atendimento especializado, estrutura completa e um time de profissionais capacitados. 
-  Presente no mercado desde 1980, conquistamos a confiança de clientes de toda a região, graças à nossa <strong>dedicação</strong> e <strong>compromisso com a qualidade</strong>.
-</p>
-<br>
-<p>
-  Trabalhamos com as <strong>principais marcas</strong> e oferecemos serviços de mecânica e comercialização de peças, garantindo <strong>soluções completas</strong> para caminhonetes, caminhões, ônibus e utilitários movidos a diesel. 
-  Na Tecnomac, cada cliente é atendido com atenção e respeito, sempre com foco na <strong>segurança</strong> e <strong>durabilidade do seu veículo</strong>.
-</p>
-
-
-
-    </div>
-  </section>
-
-  <section id="servicos" class="servicos">
-    <div class="container">
-      <h2>Serviços</h2>
-      <div class="grid-servicos">
-        <div class="card">
-          <img src="img/servicos/peças.jpg" alt="Troca de peças">
-          <h3>Troca de peças</h3>
-          <p>Substituição de componentes com peças de qualidade e mão de obra qualificada.</p>
-        </div>
-        <div class="card">
-          <img src="img/servicos/borracharia.jpg" alt="Borracharia">
-          <h3>Borracharia</h3>
-          <p>Reparos, trocas e conserto de pneus.</p>
-        </div>
-        <div class="card">
-          <img src="img/servicos/bombaInjetora.jpg" alt="Bombas injetoras">
-          <h3>Bombas injetoras</h3>
-          <p>Manutenção e reparo de bombas injetoras para máximo desempenho.</p>
-        </div>
-        <div class="card">
-          <img src="img/servicos/guincho.jpg" alt="Guincho">
-          <h3>Guincho</h3>
-          <p>Serviço de guincho rápido e seguro para emergências.</p>
-        </div>
-        <div class="card">
-          <img src="img/servicos/injecao.jpg" alt="Injeção eletrônica">
-          <h3>Injeção eletrônica</h3>
-          <p>Diagnóstico avançado e manutenção do sistema de injeção eletrônica.</p>
-        </div>
-        <div class="card">
-          <img src="img/servicos/mecanica.jpg" alt="Mecânica em geral">
-          <h3>Mecânica em geral</h3>
-          <p>Serviços completos para manutenção e conserto do seu veículo.</p>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <picture class="hero-media">
+        <source type="image/webp" srcset="assets/img/fachada-640.webp 640w, assets/img/fachada-1280.webp 1280w, assets/img/fachada-1920.webp 1920w" sizes="100vw">
+        <img src="assets/img/fachada-1280.jpg" alt="Fachada da Tecnomac, prédio vermelho às margens da SC-410 em Canelinha, com pátio para caminhões" width="1280" height="960" fetchpriority="high">
+      </picture>
+      <div class="container hero-content">
+        <p class="eyebrow eyebrow--light">Canelinha · Tijucas — SC</p>
+        <h1 id="hero-title">Seu caminhão de volta <span class="hl">à estrada</span>, com quem entende de diesel.</h1>
+        <p class="hero-lead">Oficina especializada em caminhões, ônibus, caminhonetes e utilitários a diesel. Mecânica, injeção eletrônica, bombas injetoras, borracharia, guincho e peças no mesmo lugar.</p>
+        <div class="hero-actions">
+          <a class="btn btn--primary btn--lg" href="#contato">Solicitar orçamento <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="https://wa.me/554832640808?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tecnomac%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Falar no WhatsApp
+          </a>
         </div>
       </div>
+    </section>
+
+    <!-- Faixa de números -->
+    <section class="stats" aria-label="A Tecnomac em números">
+      <div class="container">
+        <ul class="stats-grid">
+          <li><strong>+40</strong><span>anos de experiência em diesel</span></li>
+          <li><strong>4,1<svg class="icon icon--star" aria-hidden="true"><use href="#i-star"/></svg></strong><span>nota no Google (15 avaliações)</span></li>
+          <li><strong>2</strong><span>unidades: Canelinha e Tijucas</span></li>
+          <li><strong>Garantia</strong><span>em todos os serviços realizados</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="container about">
+        <div class="about-text reveal">
+          <p class="eyebrow">Quem somos</p>
+          <h2 id="sobre-title">Mais de 40 anos cuidando de quem move a região</h2>
+          <p>A <strong>Tecnomac</strong> é referência em manutenção e reparo de veículos a diesel em Canelinha e região. Desde o início, o compromisso é o mesmo: <strong>serviço técnico de qualidade</strong>, atendimento próximo e respeito ao tempo de quem trabalha na estrada.</p>
+          <p>Atendemos <strong>caminhões, ônibus, caminhonetes e utilitários</strong> das principais marcas. Na mesma estrutura você encontra oficina mecânica, borracharia, guincho e loja de peças, o que reduz o tempo do seu veículo parado.</p>
+          <ul class="checklist">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Foco em segurança e durabilidade do veículo</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Orçamento claro antes de iniciar o serviço</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Peças de qualidade com procedência</li>
+          </ul>
+        </div>
+
+        <aside class="units reveal" aria-label="Nossas unidades">
+          <article class="unit">
+            <p class="unit-tag">Matriz</p>
+            <h3>Canelinha</h3>
+            <p class="unit-desc">Oficina, borracharia, guincho e loja de peças às margens da SC-410, com pátio para veículos pesados.</p>
+            <p class="unit-line"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> SC-410, km 16, nº 3558 – Centro</p>
+          </article>
+          <article class="unit">
+            <p class="unit-tag">Loja</p>
+            <h3>Tijucas</h3>
+            <p class="unit-desc">Loja de peças para veículos a diesel, com atendimento no balcão e pelo WhatsApp.</p>
+            <p class="unit-line"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Av. Coleira, nº 794 – Praça</p>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ========== SERVIÇOS ========== -->
+    <section class="section section--alt" id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Serviços</p>
+          <h2 id="servicos-title">Tudo o que o seu veículo diesel precisa</h2>
+          <p>Do diagnóstico à entrega, com mão de obra qualificada e peças de qualidade.</p>
+        </header>
+
+        <ul class="services-grid">
+          <li class="service-card reveal">
+            <div class="service-media">
+              <img src="assets/img/servicos/mecanica-480.webp" srcset="assets/img/servicos/mecanica-480.webp 480w, assets/img/servicos/mecanica-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 600px) 50vw, 100vw" alt="Mecânico com ferramentas sobre o motor" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-engine"/></svg></span>
+            <h3>Mecânica em geral</h3>
+            <p>Manutenção preventiva e corretiva de motor, embreagem, diferencial e suspensão de veículos pesados.</p>
+          </li>
+          <li class="service-card reveal">
+            <div class="service-media">
+              <img src="assets/img/servicos/injecao-480.webp" srcset="assets/img/servicos/injecao-480.webp 480w, assets/img/servicos/injecao-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 600px) 50vw, 100vw" alt="Diagnóstico de injeção eletrônica com notebook" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-chip"/></svg></span>
+            <h3>Injeção eletrônica</h3>
+            <p>Diagnóstico com scanner e manutenção completa do sistema de injeção eletrônica.</p>
+          </li>
+          <li class="service-card reveal">
+            <div class="service-media">
+              <img src="assets/img/servicos/bomba-injetora-480.webp" srcset="assets/img/servicos/bomba-injetora-480.webp 480w, assets/img/servicos/bomba-injetora-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 600px) 50vw, 100vw" alt="Bomba injetora diesel com tubulações" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-pump"/></svg></span>
+            <h3>Bombas injetoras</h3>
+            <p>Manutenção e reparo de bombas injetoras para recuperar desempenho e economia.</p>
+          </li>
+          <li class="service-card reveal">
+            <div class="service-media">
+              <img src="assets/img/servicos/borracharia-480.webp" srcset="assets/img/servicos/borracharia-480.webp 480w, assets/img/servicos/borracharia-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 600px) 50vw, 100vw" alt="Mecânico segurando um pneu" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-tire"/></svg></span>
+            <h3>Borracharia</h3>
+            <p>Conserto, troca e reparo de pneus de caminhões, ônibus e utilitários.</p>
+          </li>
+          <li class="service-card reveal">
+            <div class="service-media">
+              <img src="assets/img/servicos/guincho-480.webp" srcset="assets/img/servicos/guincho-480.webp 480w, assets/img/servicos/guincho-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 600px) 50vw, 100vw" alt="Guincho da Tecnomac" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-tow"/></svg></span>
+            <h3>Guincho</h3>
+            <p>Remoção rápida e segura do seu veículo quando ele não pode seguir viagem.</p>
+          </li>
+          <li class="service-card reveal">
+            <div class="service-media">
+              <img src="assets/img/servicos/pecas-480.webp" srcset="assets/img/servicos/pecas-480.webp 480w, assets/img/servicos/pecas-800.webp 800w" sizes="(min-width: 1024px) 380px, (min-width: 600px) 50vw, 100vw" alt="Peças de transmissão sobre a bancada" width="480" height="300" loading="lazy" decoding="async">
+            </div>
+            <span class="service-icon"><svg aria-hidden="true"><use href="#i-gear"/></svg></span>
+            <h3>Troca de peças</h3>
+            <p>Substituição de componentes com peças de qualidade, direto do nosso estoque.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Destaque: guincho (foto real) -->
+    <section class="tow" aria-labelledby="guincho-title">
+      <div class="container tow-inner">
+        <div class="tow-media reveal">
+          <picture>
+            <source type="image/webp" srcset="assets/img/guincho-600.webp 600w, assets/img/guincho-1000.webp 1000w" sizes="(min-width: 1024px) 40vw, 100vw">
+            <img src="assets/img/guincho-1000.jpg" alt="Caminhão guincho da Tecnomac estacionado em frente à oficina" width="1000" height="997" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <div class="tow-text reveal">
+          <p class="eyebrow eyebrow--light">Guincho Tecnomac</p>
+          <h2 id="guincho-title">Quebrou na estrada? A gente busca.</h2>
+          <p>Guincho próprio para levar seu veículo direto para a oficina, onde o diagnóstico e o reparo já começam.</p>
+          <div class="tow-actions">
+            <a class="btn btn--primary btn--lg" href="https://wa.me/5548988091456?text=Ol%C3%A1!%20Preciso%20de%20guincho." target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Chamar o guincho
+            </a>
+            <a class="tow-phone" href="tel:+5548988091456"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> (48) 98809-1456</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PEÇAS ========== -->
+    <section class="section" id="pecas" aria-labelledby="pecas-title">
+      <div class="container parts">
+        <header class="section-head section-head--left reveal">
+          <p class="eyebrow">Loja de peças</p>
+          <h2 id="pecas-title">Não achou a peça? Na Tecnomac você encontra.</h2>
+          <p>Estoque para veículos a diesel nas unidades de Canelinha e Tijucas. Consulte disponibilidade e preço pelo WhatsApp.</p>
+          <a class="btn btn--dark" href="https://wa.me/554832640808?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20uma%20pe%C3%A7a." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Consultar uma peça
+          </a>
+        </header>
+
+        <ul class="parts-grid is-collapsed reveal" id="lista-pecas" aria-label="Peças disponíveis">
+          <li class="part-card">
+            <img src="assets/img/pecas/filtros.webp" alt="Filtros de ar e óleo" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Filtros de ar e óleo</h3>
+              <p>Alta performance para proteger o motor.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Filtros%20de%20ar%20e%20%C3%B3leo." target="_blank" rel="noopener" aria-label="Consultar Filtros de ar e óleo no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/disco-plato.webp" alt="Disco e platô" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Disco e platô</h3>
+              <p>Conjunto de embreagem durável e eficiente.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Disco%20e%20plat%C3%B4." target="_blank" rel="noopener" aria-label="Consultar Disco e platô no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/rolamentos.webp" alt="Rolamentos" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Rolamentos</h3>
+              <p>Precisão e resistência para várias aplicações.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Rolamentos." target="_blank" rel="noopener" aria-label="Consultar Rolamentos no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/aneis-vedacao.webp" alt="Anéis de vedação" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Anéis de vedação</h3>
+              <p>Vedação eficiente contra vazamentos.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20An%C3%A9is%20de%20veda%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Consultar Anéis de vedação no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/retentores.webp" alt="Retentores" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Retentores</h3>
+              <p>Vedação confiável contra vazamento e desgaste.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Retentores." target="_blank" rel="noopener" aria-label="Consultar Retentores no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/coroa-pinhao.webp" alt="Coroa e pinhão" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Coroa e pinhão</h3>
+              <p>Transmissão precisa e resistente para o diferencial.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Coroa%20e%20pinh%C3%A3o." target="_blank" rel="noopener" aria-label="Consultar Coroa e pinhão no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/juntas.webp" alt="Juntas" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Juntas</h3>
+              <p>Vedação perfeita para motores.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Juntas." target="_blank" rel="noopener" aria-label="Consultar Juntas no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/pneus.webp" alt="Pneus" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Pneus</h3>
+              <p>Modelos com ótima aderência e durabilidade.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Pneus." target="_blank" rel="noopener" aria-label="Consultar Pneus no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/emendas-conexoes.webp" alt="Emendas e conexões" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Emendas e conexões</h3>
+              <p>Para sistemas de combustível e de ar.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Emendas%20e%20conex%C3%B5es." target="_blank" rel="noopener" aria-label="Consultar Emendas e conexões no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/baterias.webp" alt="Baterias" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Baterias</h3>
+              <p>Alta qualidade, com instalação rápida.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Baterias." target="_blank" rel="noopener" aria-label="Consultar Baterias no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/abracadeiras.webp" alt="Abraçadeiras" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Abraçadeiras</h3>
+              <p>Fixação segura de mangueiras e conexões.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Abra%C3%A7adeiras." target="_blank" rel="noopener" aria-label="Consultar Abraçadeiras no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/correias.webp" alt="Correias" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Correias</h3>
+              <p>Resistentes para transmissão e motor.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Correias." target="_blank" rel="noopener" aria-label="Consultar Correias no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/molas.webp" alt="Molas" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Molas</h3>
+              <p>Suspensão equilibrada para veículos pesados.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Molas." target="_blank" rel="noopener" aria-label="Consultar Molas no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/colas-selantes.webp" alt="Colas, selantes e trava-roscas" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Colas, selantes e trava-roscas</h3>
+              <p>Fixação confiável e vedação duradoura.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Colas%2C%20selantes%20e%20trava-roscas." target="_blank" rel="noopener" aria-label="Consultar Colas, selantes e trava-roscas no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/grampos.webp" alt="Grampos de mola" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Grampos de mola</h3>
+              <p>Aplicados nos molejos de veículos pesados.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Grampos%20de%20mola." target="_blank" rel="noopener" aria-label="Consultar Grampos de mola no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/buchas-barra.webp" alt="Buchas de barra" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Buchas de barra</h3>
+              <p>Estabilidade e controle na suspensão.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20Buchas%20de%20barra." target="_blank" rel="noopener" aria-label="Consultar Buchas de barra no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/oleos.webp" alt="Óleos lubrificantes" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Óleos lubrificantes</h3>
+              <p>Proteção para motor e engrenagens.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20%C3%93leos%20lubrificantes." target="_blank" rel="noopener" aria-label="Consultar Óleos lubrificantes no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+          <li class="part-card">
+            <img src="assets/img/pecas/valvulas.webp" alt="Válvulas" width="360" height="360" loading="lazy" decoding="async">
+            <div class="part-body">
+              <h3>Válvulas</h3>
+              <p>Controle preciso de fluxo nos motores.</p>
+              <a class="part-link" href="https://wa.me/554832640808?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%3A%20V%C3%A1lvulas." target="_blank" rel="noopener" aria-label="Consultar Válvulas no WhatsApp">Consultar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </li>
+        </ul>
+        <div class="parts-more">
+          <button class="btn btn--outline" type="button" id="btn-pecas" aria-expanded="false" aria-controls="lista-pecas">Ver todas as peças (18)</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DIFERENCIAIS ========== -->
+    <section class="section section--dark" id="diferenciais" aria-labelledby="dif-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--light">Por que a Tecnomac</p>
+          <h2 id="dif-title">Menos tempo parado, mais tempo rodando</h2>
+        </header>
+        <ul class="features">
+          <li class="feature reveal">
+            <svg class="feature-icon" aria-hidden="true"><use href="#i-bolt"/></svg>
+            <h3>Agilidade</h3>
+            <p>Oficina, peças e guincho no mesmo endereço: o serviço começa sem esperar fornecedor.</p>
+          </li>
+          <li class="feature reveal">
+            <svg class="feature-icon" aria-hidden="true"><use href="#i-team"/></svg>
+            <h3>Equipe técnica</h3>
+            <p>Mecânicos experientes em motores diesel e nas principais marcas do mercado.</p>
+          </li>
+          <li class="feature reveal">
+            <svg class="feature-icon" aria-hidden="true"><use href="#i-building"/></svg>
+            <h3>Estrutura completa</h3>
+            <p>Prédio próprio às margens da SC-410, com pátio para caminhões e ônibus.</p>
+          </li>
+          <li class="feature reveal">
+            <svg class="feature-icon" aria-hidden="true"><use href="#i-shield"/></svg>
+            <h3>Atendimento transparente</h3>
+            <p>Orçamento explicado antes do serviço e garantia no que é feito.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== GALERIA ========== -->
+    <section class="section" id="galeria" aria-labelledby="galeria-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Galeria</p>
+          <h2 id="galeria-title">Nossa estrutura e nosso trabalho</h2>
+        </header>
+
+        <div class="gallery">
+          <figure class="gallery-item gallery-item--wide reveal">
+            <picture>
+              <source type="image/webp" srcset="assets/img/fachada-640.webp 640w, assets/img/fachada-1280.webp 1280w" sizes="(min-width: 1024px) 66vw, 100vw">
+              <img src="assets/img/fachada-1280.jpg" alt="Prédio da Tecnomac em Canelinha visto da rodovia SC-410" width="1280" height="960" loading="lazy" decoding="async">
+            </picture>
+            <figcaption>Matriz em Canelinha, às margens da SC-410</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <picture>
+              <source type="image/webp" srcset="assets/img/guincho-600.webp 600w, assets/img/guincho-1000.webp 1000w" sizes="(min-width: 1024px) 33vw, 100vw">
+              <img src="assets/img/guincho-1000.jpg" alt="Guincho da Tecnomac" width="1000" height="997" loading="lazy" decoding="async">
+            </picture>
+            <figcaption>Guincho próprio</figcaption>
+          </figure>
+
+          <!-- PLACEHOLDERS: substituir por fotos reais (ver REBRANDING.md) -->
+          <figure class="gallery-item gallery-item--placeholder reveal">
+            <div class="ph"><svg aria-hidden="true"><use href="#i-camera"/></svg><span>Foto pendente</span><small>Boxes de serviço / área interna</small></div>
+          </figure>
+          <figure class="gallery-item gallery-item--placeholder reveal">
+            <div class="ph"><svg aria-hidden="true"><use href="#i-camera"/></svg><span>Foto pendente</span><small>Equipe técnica</small></div>
+          </figure>
+          <figure class="gallery-item gallery-item--placeholder reveal">
+            <div class="ph"><svg aria-hidden="true"><use href="#i-camera"/></svg><span>Foto pendente</span><small>Caminhão em manutenção</small></div>
+          </figure>
+          <figure class="gallery-item gallery-item--placeholder reveal">
+            <div class="ph"><svg aria-hidden="true"><use href="#i-camera"/></svg><span>Foto pendente</span><small>Loja de peças</small></div>
+          </figure>
+        </div>
+        <p class="gallery-more reveal">
+          <a class="link-arrow" href="https://www.instagram.com/tecnomac.sc/" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg> Veja mais no Instagram @tecnomac.sc
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== AVALIAÇÕES ========== -->
+    <section class="section section--alt" id="avaliacoes" aria-labelledby="aval-title">
+      <div class="container reviews">
+        <div class="reviews-summary reveal">
+          <p class="eyebrow">Avaliações</p>
+          <h2 id="aval-title">O que dizem nossos clientes</h2>
+          <div class="rating" aria-label="Nota 4,1 de 5 no Google, com 15 avaliações">
+            <span class="rating-value">4,1</span>
+            <div>
+              <span class="stars" aria-hidden="true" style="--rating: 4.1">
+                <svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg>
+              </span>
+              <span class="rating-count">15 avaliações no Google</span>
+            </div>
+          </div>
+          <div class="reviews-actions">
+            <a class="btn btn--dark" href="https://www.google.com/maps?cid=5761983808227116380" target="_blank" rel="noopener">Ver no Google</a>
+            <a class="link-arrow" href="https://www.google.com/maps?cid=5761983808227116380" target="_blank" rel="noopener">Avaliar a Tecnomac <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Trechos reais exibidos no perfil público do Google (nov/2026).
+             Para incluir avaliações completas, duplique um <blockquote> e preencha texto, nome e nota. -->
+        <ul class="quotes">
+          <li class="reveal"><blockquote><p>“Muito rápidos, eficientes e ótimo preço.”</p><footer>Trecho de avaliação no Google</footer></blockquote></li>
+          <li class="reveal"><blockquote><p>“Serviço bem feito, mecânicos de confiança.”</p><footer>Trecho de avaliação no Google</footer></blockquote></li>
+          <li class="reveal"><blockquote><p>“Nota 10 em atendimento e agilidade.”</p><footer>Trecho de avaliação no Google</footer></blockquote></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section class="section" id="contato" aria-labelledby="contato-title">
+      <div class="container contact">
+        <div class="contact-info reveal">
+          <p class="eyebrow">Localização e contato</p>
+          <h2 id="contato-title">Fale com a Tecnomac</h2>
+          <p>Peça um orçamento, consulte uma peça ou agende o atendimento do seu veículo.</p>
+
+          <ul class="contact-list">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              <div><span class="label">WhatsApp</span><a href="https://wa.me/554832640808" target="_blank" rel="noopener">(48) 3264-0808</a></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              <div><span class="label">Telefone</span><a href="tel:+554832640806">(48) 3264-0806</a></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+              <div><span class="label">E-mail</span><a href="mailto:tecnomac01@hotmail.com">tecnomac01@hotmail.com</a></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              <div><span class="label">Matriz – Canelinha/SC</span>Rodovia SC-410, km 16, nº 3558 – Centro, 88230-000<br><a class="link-arrow link-arrow--sm" href="https://www.google.com/maps?cid=5761983808227116380" target="_blank" rel="noopener">Como chegar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              <div><span class="label">Loja – Tijucas/SC</span>Avenida Coleira, nº 794 – Praça</div>
+            </li>
+          </ul>
+
+          <div class="hours">
+            <h3><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg> Horário de atendimento</h3>
+            <table>
+              <tbody>
+                <tr><th scope="row">Segunda a sexta</th><td>07:00–11:50 · 13:00–17:50</td></tr>
+                <tr><th scope="row">Sábado</th><td>07:00–11:50</td></tr>
+                <tr><th scope="row">Domingo</th><td>Fechado</td></tr>
+              </tbody>
+            </table>
+            <p class="hours-status" id="hours-status" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="form-orcamento" action="https://api.whatsapp.com/send" method="get" target="_blank" novalidate>
+            <h3>Solicitar orçamento</h3>
+            <p class="form-note">Preencha os dados e envie direto para o nosso WhatsApp.</p>
+            <input type="hidden" name="phone" value="554832640808">
+
+            <div class="field">
+              <label for="f-nome">Nome</label>
+              <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+              <p class="field-error" id="f-nome-erro"></p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-tel">Telefone / WhatsApp</label>
+                <input id="f-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(48) 99999-9999" required>
+                <p class="field-error" id="f-tel-erro"></p>
+              </div>
+              <div class="field">
+                <label for="f-veiculo">Veículo <span class="optional">(opcional)</span></label>
+                <input id="f-veiculo" name="veiculo" type="text" placeholder="Ex.: Volvo FH 460, 2015">
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-servico">Assunto</label>
+              <select id="f-servico" name="servico">
+                <option>Mecânica em geral</option>
+                <option>Injeção eletrônica</option>
+                <option>Bombas injetoras</option>
+                <option>Borracharia</option>
+                <option>Guincho</option>
+                <option>Compra de peças</option>
+                <option>Outro assunto</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-msg">Mensagem</label>
+              <textarea id="f-msg" name="text" rows="4" placeholder="Descreva o problema ou a peça que procura"></textarea>
+            </div>
+            <button class="btn btn--primary btn--lg btn--block" type="submit">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Enviar pelo WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="map reveal">
+        <iframe title="Mapa: localização da Tecnomac em Canelinha/SC" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5964.493509327473!2d-48.780977221631076!3d-27.265922647757915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df538a8488d181%3A0x4ff6adbecaee055c!2sTecnomac!5e0!3m2!1spt-BR!2sbr!4v1750362332829!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <picture>
+          <source srcset="assets/img/logo-tecnomac.webp" type="image/webp">
+          <img src="assets/img/logo-tecnomac.png" alt="Tecnomac" width="600" height="132" loading="lazy">
+        </picture>
+        <p>Oficina e peças para caminhões, ônibus e utilitários a diesel em Canelinha e Tijucas – SC.</p>
+        <a class="social" href="https://www.instagram.com/tecnomac.sc/" target="_blank" rel="noopener" aria-label="Instagram da Tecnomac">
+          <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+        </a>
+      </div>
+      <nav aria-label="Rodapé">
+        <h2 class="footer-title">Navegação</h2>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#pecas">Peças</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-title">Contato</h2>
+        <ul>
+          <li><a href="https://wa.me/554832640808" target="_blank" rel="noopener">WhatsApp (48) 3264-0808</a></li>
+          <li><a href="tel:+554832640806">Telefone (48) 3264-0806</a></li>
+          <li><a href="tel:+5548988091456">Guincho (48) 98809-1456</a></li>
+          <li><a href="mailto:tecnomac01@hotmail.com">tecnomac01@hotmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Horário</h2>
+        <ul>
+          <li>Seg. a sex.: 07:00–11:50 e 13:00–17:50</li>
+          <li>Sábado: 07:00–11:50</li>
+          <li>Domingo: fechado</li>
+        </ul>
+      </div>
     </div>
-  </section>
-
- <section id="pecas" class="servicos">
-  <div class="container">
-    <h2>Peças</h2>
-    <p class="frase-destaque">Não está encontrando a peça que precisa? Na Tecnomac você encontra!</p>
-    <div class="grid-servicos">
-      <!-- ... (restante dos cards de peças) -->
-      <div class="card">
-        <img src="img/pecas/Filtros.jpg" alt="Filtro de ar e óleo">
-        <h3>Filtro de ar e óleo</h3>
-        <p>Filtros de alta performance para melhor desempenho do motor.</p>
-      </div>
-      <div class="card">
-        <img src="img/pecas/Disco e Platô.png" alt="Disco e Platô">
-        <h3>Disco e Platô</h3>
-        <p>Conjunto de embreagem com durabilidade e eficiência.</p>
-      </div>
-      <div class="card">
-        <img src="img/pecas/Rolamentos_1.png" alt="Rolamentos">
-        <h3>Rolamentos</h3>
-        <p>Precisão e resistência para diversas aplicações automotivas.</p>
-      </div>
-        <div class="card">
-        <img src="img/pecas/aneis de vedação.png" alt="Anéis de vedação">
-        <h3>Anéis de vedação</h3>
-        <p>Vedação eficiente para evitar vazamentos em sistemas automotivos.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Retentores.png" alt="Retentores">
-        <h3>Retentores</h3>
-        <p>Vedação confiável para evitar vazamentos e desgaste.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/agd_3491-21-fa40de8ecfa9d7e9a515263254602027-1024-1024.png" alt="Coroa e Pinhão">
-        <h3>Coroa e Pinhão</h3>
-        <p>Transmissão precisa e resistente para o diferencial.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/juntas-para-vedacao-5.png" alt="Juntas">
-        <h3>Juntas</h3>
-        <p>Vedação perfeita para motores e sistemas automotivos.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Pneus_1.png" alt="Pneus">
-        <h3>Pneus</h3>
-        <p>Diversos modelos com excelente aderência e durabilidade.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Emendas e Conexões.png" alt="Emendas e Conexões">
-        <h3>Emendas e Conexões</h3>
-        <p>Componentes essenciais para sistemas de combustível e ar.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Baterias.png" alt="Baterias">
-        <h3>Baterias</h3>
-        <p>Baterias de alta qualidade com instalação rápida.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Abraçadeiras.png" alt="Abraçadeiras">
-        <h3>Abraçadeiras</h3>
-        <p>Fixação segura para mangueiras e conexões.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Correias.png" alt="Correias">
-        <h3>Correias</h3>
-        <p>Correias resistentes para sistemas de transmissão e motor.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Molas.png" alt="Molas">
-        <h3>Molas</h3>
-        <p>Suspensão equilibrada com molas de qualidade superior.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Colas selante.png" alt="Colas selante trava de parafusos">
-        <h3>Colas selante/trava de parafusos</h3>
-        <p>Fixação confiável e vedação duradoura.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Grampos.jpg" alt="Grampos">
-        <h3>Grampos</h3>
-        <p>Grampos aplicados em molejos de veículos pesados.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Bucha de Barra.png" alt="Bucha de Barra">
-        <h3>Bucha de Barra</h3>
-        <p>Estabilidade e controle na suspensão do veículo.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Óleos-lubrificantes_1.png" alt="Óleos lubrificantes">
-        <h3>Óleos lubrificantes</h3>
-        <p>Lubrificação ideal para proteção do motor e engrenagens.</p>
-      </div>
-      <div class="card hidden">
-        <img src="img/pecas/Valvula.jpg" alt="Válvulas">
-        <h3>Válvulas</h3>
-        <p>Controle preciso de fluxo nos motores.</p>
-      </div>
-    </div>
-    <button id="btn-ver-mais" class="botao-ver-mais">Ver mais</button>
-    <button id="btn-ver-menos" class="botao-ver-mais" style="display: none;">Ver menos</button>
-  </div>
-</section>
-
-
-  <section id="localizacao" class="localizacao">
-    <div class="container">
-      <h2>Localização</h2>
-      <p><strong>Matriz:</strong> SC 410, km 16, n°3558 - Bairro Centro - Canelinha/SC</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5964.493509327473!2d-48.780977221631076!3d-27.265922647757915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df538a8488d181%3A0x4ff6adbecaee055c!2sTecnomac!5e0!3m2!1spt-BR!2sbr!4v1750362332829!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="container" id="Tijucas">
-      <h3>Loja em Tijucas</h3>
-      <p>Avenida Coleira, n°794 - Bairro Praça - Tijucas/SC</p>
-      <p>
-      <i class="fab fa-whatsapp"></i>
-      (48) 3264-0808
-      </p>
-    </div>
-  </section>
-
-<section id="contato" class="contato">
-  <div class="container">
-    <h2>Fale com a gente</h2>
-    <p>
-      Entre em contato conosco pelo WhatsApp e tire suas dúvidas ou agende seu horário.
-    </p>
-
-    <div class="contato-linha">
-       <p>
-        <i class="fab fa-whatsapp"></i>
-        (48) 3264-0808
-      </p>
-      <p>
-        <i class="fas fa-phone-alt"></i>
-        (48) 3264-0806
-      </p>
-      <p>
-        <i class="fas fa-envelope"></i>
-        tecnomac01@hotmail.com
-      </p>
-    </div>
-
-    <a class="botao-whats" href="https://wa.me/554832640808" target="_blank">Chamar no WhatsApp</a>
-  </div>
-</section>
-
-
-  <a href="#topo" class="botao-topo" title="Voltar ao topo">
-    <i class="fas fa-arrow-up"></i>
-  </a>
-
-  <footer class="rodape">
-    <div class="container">
-      <p>&copy; 2025 Tecnomac Comércio de Peças e Assistência Técnica LTDA.</p>
+    <div class="container footer-legal">
+      <p>© <span id="ano">2026</span> Tecnomac Comércio de Peças e Assistência Técnica LTDA. Todos os direitos reservados.</p>
+      <p>SC-410, km 16, nº 3558 – Centro – Canelinha/SC</p>
     </div>
   </footer>
 
-  <script>
-    const btnVerMais = document.getElementById('btn-ver-mais');
-    const btnVerMenos = document.getElementById('btn-ver-menos');
-    const pecasSection = document.querySelector('#pecas');
+  <!-- Botão flutuante de WhatsApp -->
+  <a class="wa-float" href="https://wa.me/554832640808?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Tecnomac." target="_blank" rel="noopener" aria-label="Conversar com a Tecnomac no WhatsApp">
+    <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
 
-    btnVerMais.addEventListener('click', () => {
-      pecasSection.querySelectorAll('.card.hidden').forEach(card => {
-        card.classList.remove('hidden');
-      });
-      btnVerMais.style.display = 'none';
-      btnVerMenos.style.display = 'inline-block';
-    });
-
-    btnVerMenos.addEventListener('click', () => {
-      pecasSection.querySelectorAll('.card').forEach((card, index) => {
-        if (index >= 4) {
-          card.classList.add('hidden');
-        }
-      });
-      btnVerMenos.style.display = 'none';
-      btnVerMais.style.display = 'inline-block';
-    });
-  </script>
-<script>
-  const menu = document.querySelector('.menu');
-  const headerFixo = document.getElementById('header-fixo');
-
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-    const limite = menu.offsetTop + menu.offsetHeight;
-
-    if (scrollY >= limite) {
-      headerFixo.classList.add('visible');
-    } else {
-      headerFixo.classList.remove('visible');
-    }
-  });
-
-  const btnHamburguer = document.querySelector('.btn-hamburguer');
-const menuFixo = document.querySelector('.menu-fixo');
-
-btnHamburguer.addEventListener('click', () => {
-  menuFixo.classList.toggle('menu-aberto');
-  btnHamburguer.classList.toggle('menu-aberto');
-});
-
-</script>
-
+  <script src="js/main.js" defer></script>
 </body>
 </html>

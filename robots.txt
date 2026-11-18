@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /_legado/
+Allow: /
+
+Sitemap: https://mecanicatecnomac.com.br/sitemap.xml
