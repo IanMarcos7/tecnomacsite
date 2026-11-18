@@ -77,7 +77,7 @@ img/                  imagens antigas, que o novo site não usa mais
 
 ## 6. Pendências
 
-1. **Fotos reais** para os 4 placeholders da galeria: área interna/boxes, equipe, caminhão em manutenção e loja de peças. Exporte em cerca de 1600px e me envie, que eu converto para WebP.
+1. **Galeria:** usa fotos do Instagram @tecnomac.sc (equipe e guincho) e do perfil do Google enviadas pela própria Tecnomac (pátio e prédio). Fotos de clientes no Google não foram usadas (direitos do autor). Fotos novas da área interna, da equipe trabalhando e da loja de peças deixam a galeria ainda melhor.
 2. **Ano de fundação:** o site antigo dizia "desde 1980 / +40 anos", mas o CNPJ registra abertura em 14/11/1991. Confirme qual informação usar (o site mantém "+40 anos").
 3. **Endereço:** o site antigo dizia "SC-410, **km 16**", mas a página Alboom diz "**km 12**". Confirme também o nome da via em Tijucas ("Avenida Coleira").
 4. **Telefone e WhatsApp da loja de Tijucas**, se forem diferentes da matriz.
